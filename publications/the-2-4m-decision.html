@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ADS-Ω™ Technical Publication 001 — The $2.4M Decision. An illustrative decision-security scenario from Cyber Unveil International, LLC.">
+<title>ADS-Ω™ Technical Publication 001 — The $2.4M Decision</title>
+<style>
+:root{--bg:#090807;--panel:#11100d;--gold:#d9b859;--gold2:#f1dc8a;--cream:#f2ede0;--dim:#a79c88;--line:#4e3e1b;}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--cream);font-family:Inter,Arial,sans-serif;line-height:1.65}
+a{color:var(--gold2)} .wrap{max-width:1080px;margin:auto;padding:38px 28px 80px}
+header{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:42px}
+.brand{font-family:Georgia,serif;font-size:56px;color:var(--gold2);letter-spacing:1px;font-weight:700}
+.sub{letter-spacing:5px;font-size:11px} .release{margin-top:18px;color:var(--gold);font:11px ui-monospace,monospace;letter-spacing:2px}
+.eyebrow{color:var(--gold);font:11px ui-monospace,monospace;letter-spacing:3px;margin-top:48px}
+h1{font-family:Georgia,serif;font-size:clamp(52px,9vw,100px);line-height:.95;margin:14px 0;color:var(--gold2)}
+.deck{font-family:Georgia,serif;font-size:clamp(24px,4vw,38px);margin:18px 0 8px}
+.note{color:var(--dim);font:10px ui-monospace,monospace;letter-spacing:2px}
+section{margin:58px 0} h2{font-family:Georgia,serif;font-size:31px;font-weight:400;border-bottom:1px solid var(--line);padding-bottom:10px}
+p{font-size:17px;color:#ddd6c8} strong{color:var(--cream)} blockquote{margin:30px 0;padding:20px 26px;border-left:2px solid var(--gold);background:var(--panel);font-family:Georgia,serif;font-size:24px}
+.principle{text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px;margin:34px 0;font-family:Georgia,serif;font-size:29px}
+.layers{display:grid;grid-template-columns:repeat(2,1fr);gap:14px} .layers div,.ccf{border:1px solid var(--line);background:var(--panel);padding:18px}
+.layers b,.ccf b{color:var(--gold2)} .layers span{display:block;color:var(--dim);margin-top:8px;font-size:14px} .ccf{margin-top:14px;text-align:center;color:var(--dim)}
+.state{display:inline-flex;gap:16px;align-items:center;border:1px solid var(--gold);padding:12px 18px;color:var(--gold2);letter-spacing:3px;font-weight:700} .state small{color:var(--dim);letter-spacing:0;font-weight:400}
+.das{display:grid;grid-template-columns:repeat(5,1fr);margin-top:28px;border:1px solid var(--line)} .das span{padding:12px 5px;text-align:center;border-right:1px solid var(--line);letter-spacing:2px;font-size:12px} .das span:last-child{border:0}
+footer{border-top:1px solid var(--line);margin-top:70px;padding-top:28px;color:var(--dim);font-size:13px} .owner{color:var(--gold2);letter-spacing:1px}
+.cta{display:inline-block;margin-top:16px;padding:12px 18px;border:1px solid var(--gold);text-decoration:none;color:var(--gold2)}
+@media(max-width:700px){.wrap{padding:24px 18px 60px} .brand{font-size:42px} .layers{grid-template-columns:1fr} .das{grid-template-columns:1fr} .das span{border-right:0;border-bottom:1px solid var(--line)} .das span:last-child{border-bottom:0} blockquote{font-size:20px}}
+</style>
+</head>
+<body><main class="wrap">
+<header>
+<div class="brand">ADS-Ω™</div>
+<div class="sub">AUTONOMOUS DECISION SECURITY</div>
+<div class="release">PUBLIC RELEASE 1.0 · TECHNICAL PUBLICATION 001</div>
+<div class="eyebrow">ILLUSTRATIVE DECISION SCENARIO · NOT A CLIENT CASE OR OPERATIONAL DEPLOYMENT</div>
+<h1>THE $2.4M DECISION</h1>
+<div class="deck">Technical capability is not decision authority.</div>
+</header>
+<section><h2>Scenario</h2>
+<p>An autonomous finance agent is preparing to release a <strong>$2.4 million supplier payment</strong>.</p>
+<p>The agent has a valid enterprise identity. It is authenticated. It has legitimate ERP access. The supplier is approved. The invoice matches an approved purchase order. The goods were <strong>recorded</strong> as received. The payment API is available.</p>
+<p>So the system appears technically capable of executing the transaction.</p>
+<div class="principle">Technical capability is not decision authority.</div>
+<p>Now introduce one additional fact: <strong>the supplier’s banking information changed 18 hours ago, and the required independent verification has not yet been completed.</strong></p>
+</section>
+<section><h2>Existing controls matter</h2>
+<p>Accounts-payable organizations already use controls such as supplier-master change procedures, callback verification, payment holds, dual authorization, and other fraud controls. Those controls matter.</p>
+<p>ADS-Ω™ addresses a broader architectural question:</p>
+<blockquote>Can the consequential decision itself be explicitly identified, bounded, authorized, evidenced, and continuously re-evaluated across systems and domains before it becomes external impact?</blockquote>
+<p>The security object in ADS-Ω™ is not merely the agent, credential, API, model, or payment tool.</p>
+<div class="principle">The decision is the security object.</div>
+</section>
+<section><h2>Seven-layer control architecture</h2>
+<div class="layers">
+<div><b>DCE™ — Decision Core Engine</b><span>Establishes the decision identity, class, source, authority context, policy binding, and applicable Decision Constraint Envelope.</span></div>
+<div><b>CIF™ — Context Integrity Field</b><span>Evaluates context provenance, freshness, admissibility, and required treatment. Context Trust does not equal truth.</span></div>
+<div><b>RVL™ — Reasoning Validation Layer</b><span>Validates the observable decision basis against applicable policy and intent without requiring private model chain-of-thought.</span></div>
+<div><b>AVC™ — Action Vector Control</b><span>Evaluates decision risk, uncertainty, constraints, and authority requirements. Acceptable risk does not itself authorize execution.</span></div>
+<div><b>EG™ — Execution Governance</b><span>Determines and enforces whether the specific action is authorized to cross the Decision Trust Boundary.</span></div>
+<div><b>TMG™ — Trace Matrix Grid</b><span>Preserves evidence continuity so authorization, execution, result, and observed outcome can be reconstructed without treating the record as automatic truth.</span></div>
+</div>
+<div class="ccf"><b>CCF™ — Cognitive Containment Field</b><br>Continuously evaluates conditions relevant to continuing authorization and restricts authority when material conditions invalidate it.</div>
+</section>
+<section><h2>The scenario through DAS™</h2>
+<p>Under an <strong>illustrative policy assumption</strong> requiring independent verification before high-value payment execution, the unresolved banking change could result in:</p>
+<div class="state">GATE <small>required authority condition pending</small></div>
+<p>If verification is subsequently completed and the decision receives a bounded <strong>GRANT</strong>, execution is authorized only within the applicable conditions and constraints.</p>
+<p>If the beneficiary banking information materially changes again before execution, continuing authorization must be re-evaluated. Under the stated illustrative policy, that condition could result in:</p>
+<div class="state">SUSPEND <small>non-executing pending authorized resolution</small></div>
+<p>A previous GRANT is not timeless authority.</p>
+<div class="das"><span>GRANT</span><span>BLOCK</span><span>ADJUST</span><span>GATE</span><span>SUSPEND</span></div>
+</section>
+<section><h2>Evidence and reconstruction</h2>
+<p>TMG™ preserves the evidence continuity needed to reconstruct what decision was requested, what context was admitted, what authority applied, what constraints were active, what authorization state was issued, whether execution occurred, what result followed, and what material condition later changed.</p>
+<div class="principle">Authorization ≠ Execution ≠ Outcome</div>
+<p>A GRANT does not prove execution occurred. Successful execution does not prove authorization was valid. A favorable outcome does not retroactively prove that the original decision was properly governed.</p>
+</section>
+<section><h2>The technical challenge</h2>
+<p>The point is not that existing cybersecurity, fraud, AI governance, or financial controls are absent. The point is that consequential autonomous decisions can cross models, identities, data, policies, tools, APIs, organizations, and time.</p>
+<p>The architectural question is whether the <strong>decision itself</strong> remains explicitly governed across those boundaries.</p>
+<blockquote>Where in your architecture is a consequential decision explicitly identified, bounded, authorized, continuously revalidated, and preserved as reconstructable evidence before it becomes impact?</blockquote>
+<p>That is the problem ADS-Ω™ is attempting to make visible.</p>
+</section>
+<footer>
+<div class="owner">ADS-Ω™ — Autonomous Decision Security™ · Cyber Unveil International, LLC</div>
+<p>Proprietary framework. Derived from ADS-Ω™ Public Release 1.0. This publication is a controlled public communication derivative and does not supersede the authoritative framework source.</p>
+<a class="cta" href="https://github.com/Cyber-Unveil/ADS-Omega">View ADS-Ω™ Public Release 1.0</a>
+<p>© 2026 Cyber Unveil International, LLC. All rights reserved.</p>
+</footer>
+</main></body></html>
