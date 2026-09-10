@@ -1,0 +1,243 @@
+<meta charset="utf-8">
+<style>
+  @page { margin:0; }
+  html,body { margin:0; padding:0; }
+  body {
+    width:1536px; height:1024px; position:relative; overflow:hidden;
+    background:#0A0908;
+    font-family:"Inter Light", sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .abs { position:absolute; }
+  .mono { font-family:"JBM Medium", monospace; }
+  .semi { font-family:"Inter Semi", sans-serif; }
+  .med  { font-family:"Inter Medium", sans-serif; }
+  .pf   { font-family:"Playfair Reg", serif; }
+  .cream { color:#F2EDE0; }
+  .gold  { color:#D9B859; }
+  .dim   { color:#8A7F6B; }
+</style>
+
+<!-- ================= BACKGROUND FIELD ================= -->
+<svg class="abs" style="left:0;top:0;" width="1536" height="1024">
+  <defs>
+    <radialGradient id="halo" cx="50%" cy="100%" r="62%">
+      <stop offset="0%"   stop-color="#E0C064" stop-opacity="0.30"/>
+      <stop offset="38%"  stop-color="#8E6F2A" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#0A0908" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="arc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#8E6F2A" stop-opacity="0.15"/>
+      <stop offset="30%"  stop-color="#C9A84C" stop-opacity="0.75"/>
+      <stop offset="50%"  stop-color="#F7E693" stop-opacity="1"/>
+      <stop offset="70%"  stop-color="#C9A84C" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#8E6F2A" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#F9EFC0"/>
+      <stop offset="34%"  stop-color="#E7CB78"/>
+      <stop offset="62%"  stop-color="#C9A84C"/>
+      <stop offset="100%" stop-color="#9A7A31"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#F7E693"/>
+      <stop offset="45%"  stop-color="#D9B859"/>
+      <stop offset="100%" stop-color="#7E611F"/>
+    </linearGradient>
+    <radialGradient id="node" cx="50%" cy="34%" r="72%">
+      <stop offset="0%"   stop-color="#241C0C"/>
+      <stop offset="100%" stop-color="#0A0908"/>
+    </radialGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#FFF6D2" stop-opacity="0.95"/>
+      <stop offset="45%"  stop-color="#E7CB78" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0A0908" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1536" height="1024" fill="#0A0908"/>
+  <ellipse cx="768" cy="1010" rx="900" ry="290" fill="url(#halo)"/>
+
+  <!-- planetary limb -->
+  <ellipse cx="768" cy="1754" rx="1750" ry="760" fill="#0A0908"/>
+  <ellipse cx="768" cy="1754" rx="1750" ry="760" fill="none" stroke="url(#arc)" stroke-width="2.6"/>
+  <ellipse cx="768" cy="1758" rx="1750" ry="760" fill="none" stroke="url(#arc)" stroke-width="10" opacity="0.18"/>
+  <circle cx="768" cy="994" r="112" fill="url(#sun)"/>
+</svg>
+
+<!-- ================= HEADER ================= -->
+<svg class="abs" style="left:56px;top:22px;" width="520" height="86">
+  <text x="0" y="58" font-family="Playfair Black" font-size="60" fill="url(#gold)"
+        letter-spacing="1">ADS-&#937;</text>
+  <text x="228" y="26" font-family="Inter Semi" font-size="15" fill="#C9A84C">&#8482;</text>
+</svg>
+<div class="abs semi" style="left:60px;top:96px;font-size:11.5px;letter-spacing:5.2px;color:#F2EDE0;">AUTONOMOUS DECISION SECURITY</div>
+<div class="abs" style="left:60px;top:118px;width:432px;height:1px;background:#8E6F2A;"></div>
+<div class="abs mono" style="left:60px;top:130px;font-size:9.5px;letter-spacing:3.4px;color:#C9A84C;">THE DECISION IS THE SECURITY OBJECT</div>
+
+<!-- lifecycle rail -->
+<div class="abs mono" style="left:1246px;top:24px;font-size:8.5px;letter-spacing:2.6px;color:#7E611F;">DECISION LIFECYCLE</div>
+<div class="abs" style="left:1246px;top:42px;width:236px;height:1px;background:#3A2F16;"></div>
+<div class="abs mono" style="left:1246px;top:52px;font-size:8.5px;letter-spacing:1.6px;line-height:16px;color:#D9B859;">
+  <span style="color:#6E5A2C;">01</span> &nbsp;INITIATION<br>
+  <span style="color:#6E5A2C;">02</span> &nbsp;CONTEXT<br>
+  <span style="color:#6E5A2C;">03</span> &nbsp;DECISION BASIS<br>
+  <span style="color:#6E5A2C;">04</span> &nbsp;RISK / UNCERTAINTY<br>
+  <span style="color:#6E5A2C;">05</span> &nbsp;AUTHORITY / CONSTRAINTS<br>
+  <span style="color:#6E5A2C;">06</span> &nbsp;AUTHORIZATION<br>
+  <span style="color:#6E5A2C;">07</span> &nbsp;EXECUTION<br>
+  <span style="color:#6E5A2C;">08</span> &nbsp;OUTCOME<br>
+  <span style="color:#6E5A2C;">09</span> &nbsp;EVIDENCE<br>
+  <span style="color:#6E5A2C;">10</span> &nbsp;CONTAINMENT / RECOVERY<br>
+  <span style="color:#6E5A2C;">11</span> &nbsp;ASSURANCE
+</div>
+
+<!-- ================= EYEBROW ================= -->
+<div class="abs" style="left:306px;top:186px;width:290px;height:1px;background:#5C4A22;"></div>
+<div class="abs" style="left:940px;top:186px;width:290px;height:1px;background:#5C4A22;"></div>
+<div class="abs semi" style="left:0;top:178px;width:1536px;text-align:center;font-size:11px;letter-spacing:4.6px;color:#F2EDE0;">ONE DECISION. FULLY GOVERNED.</div>
+
+<!-- ================= HEADLINE ================= -->
+<svg class="abs" style="left:0;top:208px;" width="1536" height="112">
+  <text x="768" y="96" text-anchor="middle" font-family="Playfair Black" font-size="100"
+        fill="url(#gold)" letter-spacing="1">THE $2.4M DECISION</text>
+</svg>
+
+<div class="abs pf" style="left:0;top:330px;width:1536px;text-align:center;font-size:37px;color:#F2EDE0;">Technical capability is not decision authority.</div>
+
+<div class="abs mono" style="left:0;top:392px;width:1536px;text-align:center;font-size:9px;letter-spacing:1.9px;color:#7E611F;">
+  ILLUSTRATIVE DECISION SCENARIO &nbsp;&#183;&nbsp; NOT A CLIENT FIGURE
+</div>
+
+<div class="abs semi" style="left:0;top:422px;width:1536px;text-align:center;font-size:10.5px;letter-spacing:4.4px;color:#D9B859;">SEVEN LAYERS. ONE DECISION. ONE ACCOUNTABLE RECORD.</div>
+
+<!-- ================= CONTROL PLANE ================= -->
+<svg class="abs" style="left:0;top:452px;" width="1536" height="104">
+  <line x1="238" y1="52" x2="1298" y2="52" stroke="#4E3E1B" stroke-width="1"/>
+  <circle cx="305" cy="52" r="3.2" fill="#C9A84C"/>
+  <circle cx="420" cy="52" r="3.2" fill="#C9A84C"/>
+  <circle cx="535" cy="52" r="3.2" fill="#C9A84C"/>
+  <circle cx="650" cy="52" r="3.2" fill="#C9A84C"/>
+  <circle cx="765" cy="52" r="3.2" fill="#C9A84C"/>
+  <circle cx="880" cy="52" r="3.2" fill="#C9A84C"/>
+  <circle cx="995" cy="52" r="3.2" fill="#C9A84C"/>
+  <circle cx="1110" cy="52" r="3.2" fill="#C9A84C"/>
+  <circle cx="1225" cy="52" r="3.2" fill="#C9A84C"/>
+
+  <g>
+    <circle cx="190" cy="52" r="47" fill="url(#node)" stroke="url(#ring)" stroke-width="1.6"/>
+    <text x="190" y="61" text-anchor="middle" font-family="Playfair Reg" font-size="27" fill="#F2EDE0">DCE</text>
+    <text x="226" y="41" font-family="Inter Semi" font-size="9" fill="#C9A84C">&#8482;</text>
+
+    <circle cx="420" cy="52" r="47" fill="url(#node)" stroke="url(#ring)" stroke-width="1.6"/>
+    <text x="420" y="61" text-anchor="middle" font-family="Playfair Reg" font-size="27" fill="#F2EDE0">CIF</text>
+    <text x="452" y="41" font-family="Inter Semi" font-size="9" fill="#C9A84C">&#8482;</text>
+
+    <circle cx="650" cy="52" r="47" fill="url(#node)" stroke="url(#ring)" stroke-width="1.6"/>
+    <text x="650" y="61" text-anchor="middle" font-family="Playfair Reg" font-size="27" fill="#F2EDE0">RVL</text>
+    <text x="684" y="41" font-family="Inter Semi" font-size="9" fill="#C9A84C">&#8482;</text>
+
+    <circle cx="880" cy="52" r="47" fill="url(#node)" stroke="url(#ring)" stroke-width="1.6"/>
+    <text x="880" y="61" text-anchor="middle" font-family="Playfair Reg" font-size="27" fill="#F2EDE0">AVC</text>
+    <text x="916" y="41" font-family="Inter Semi" font-size="9" fill="#C9A84C">&#8482;</text>
+
+    <circle cx="1110" cy="52" r="47" fill="url(#node)" stroke="url(#ring)" stroke-width="1.6"/>
+    <text x="1110" y="61" text-anchor="middle" font-family="Playfair Reg" font-size="27" fill="#F2EDE0">EG</text>
+    <text x="1129" y="41" font-family="Inter Semi" font-size="9" fill="#C9A84C">&#8482;</text>
+
+    <circle cx="1340" cy="52" r="47" fill="url(#node)" stroke="url(#ring)" stroke-width="1.6"/>
+    <text x="1340" y="61" text-anchor="middle" font-family="Playfair Reg" font-size="27" fill="#F2EDE0">TMG</text>
+    <text x="1378" y="41" font-family="Inter Semi" font-size="9" fill="#C9A84C">&#8482;</text>
+  </g>
+</svg>
+
+<!-- layer labels -->
+<div class="abs" style="left:80px;top:566px;width:220px;text-align:center;">
+  <div class="semi" style="font-size:9.5px;letter-spacing:1.9px;color:#D9B859;line-height:14px;">DECISION<br>CORE ENGINE</div>
+  <div style="font-size:9.5px;line-height:13.5px;color:#9C917D;margin-top:7px;">Establishes the decision identity, class, source, authority context and policy binding.</div>
+</div>
+<div class="abs" style="left:310px;top:566px;width:220px;text-align:center;">
+  <div class="semi" style="font-size:9.5px;letter-spacing:1.9px;color:#D9B859;line-height:14px;">CONTEXT<br>INTEGRITY FIELD</div>
+  <div style="font-size:9.5px;line-height:13.5px;color:#9C917D;margin-top:7px;">Evaluates context provenance, freshness, admissibility and required treatment.</div>
+</div>
+<div class="abs" style="left:540px;top:566px;width:220px;text-align:center;">
+  <div class="semi" style="font-size:9.5px;letter-spacing:1.9px;color:#D9B859;line-height:14px;">REASONING<br>VALIDATION LAYER</div>
+  <div style="font-size:9.5px;line-height:13.5px;color:#9C917D;margin-top:7px;">Validates the observable decision basis against applicable policy and intent.</div>
+</div>
+<div class="abs" style="left:770px;top:566px;width:220px;text-align:center;">
+  <div class="semi" style="font-size:9.5px;letter-spacing:1.9px;color:#D9B859;line-height:14px;">ACTION<br>VECTOR CONTROL</div>
+  <div style="font-size:9.5px;line-height:13.5px;color:#9C917D;margin-top:7px;">Evaluates decision risk, uncertainty, constraints and authority requirements.</div>
+</div>
+<div class="abs" style="left:1000px;top:566px;width:220px;text-align:center;">
+  <div class="semi" style="font-size:9.5px;letter-spacing:1.9px;color:#D9B859;line-height:14px;">EXECUTION<br>GOVERNANCE</div>
+  <div style="font-size:9.5px;line-height:13.5px;color:#9C917D;margin-top:7px;">Determines and enforces whether the specific action is authorized to execute.</div>
+</div>
+<div class="abs" style="left:1230px;top:566px;width:220px;text-align:center;">
+  <div class="semi" style="font-size:9.5px;letter-spacing:1.9px;color:#D9B859;line-height:14px;">TRACE<br>MATRIX GRID</div>
+  <div style="font-size:9.5px;line-height:13.5px;color:#9C917D;margin-top:7px;">Preserves evidence continuity so the decision can be reconstructed.</div>
+</div>
+
+<!-- CCF continuous band -->
+<div class="abs" style="left:143px;top:632px;width:1250px;height:38px;border:1px solid #4E3E1B;background:#120E06;"></div>
+<div class="abs" style="left:143px;top:632px;width:1250px;height:38px;">
+  <div class="semi" style="text-align:center;margin-top:8px;font-size:9.5px;letter-spacing:2.6px;color:#D9B859;">
+    CCF<span style="font-size:6.5px;vertical-align:super;">&#8482;</span> &nbsp;COGNITIVE CONTAINMENT FIELD
+    <span style="color:#6E5A2C;">&nbsp;&#8212;&nbsp;</span>
+    <span style="color:#9C917D;letter-spacing:0.9px;font-size:8.6px;">CONTINUOUS ACROSS THE DECISION LIFECYCLE &#183; RESTRICTS AUTHORITY WHEN MATERIAL CONDITIONS INVALIDATE CONTINUING AUTHORIZATION</span>
+  </div>
+</div>
+
+<!-- ================= DOCTRINE LINE ================= -->
+<div class="abs" style="left:143px;top:702px;width:1250px;height:1px;background:#5C4A22;"></div>
+<div class="abs pf" style="left:0;top:718px;width:1536px;text-align:center;font-size:32px;color:#F2EDE0;">
+  Can the action execute? &nbsp;<span style="color:#E0C064;">&#8800;</span>&nbsp; Should this decision be authorized?
+</div>
+<div class="abs" style="left:143px;top:772px;width:1250px;height:1px;background:#5C4A22;"></div>
+
+<!-- ================= DAS STATES ================= -->
+<div class="abs mono" style="left:0;top:790px;width:1536px;text-align:center;font-size:9px;letter-spacing:2.6px;color:#C9A84C;">
+  DAS&#8482; &#183; DECISION AUTHORIZATION STATES &#183; WITHIN EG&#8482;
+</div>
+
+<div class="abs" style="left:288px;top:816px;width:192px;height:52px;border:1px solid #6E5A2C;background:#120E06;"></div>
+<div class="abs" style="left:288px;top:826px;width:192px;text-align:center;">
+  <div class="semi" style="font-size:11.5px;letter-spacing:3.2px;color:#F2EDE0;">GRANT</div>
+  <div style="font-size:8.5px;color:#8A7F6B;margin-top:4px;letter-spacing:0.3px;">bounded execution authorized</div>
+</div>
+
+<div class="abs" style="left:480px;top:816px;width:192px;height:52px;border:1px solid #6E5A2C;background:#120E06;"></div>
+<div class="abs" style="left:480px;top:826px;width:192px;text-align:center;">
+  <div class="semi" style="font-size:11.5px;letter-spacing:3.2px;color:#F2EDE0;">BLOCK</div>
+  <div style="font-size:8.5px;color:#8A7F6B;margin-top:4px;letter-spacing:0.3px;">execution prohibited</div>
+</div>
+
+<div class="abs" style="left:672px;top:816px;width:192px;height:52px;border:1px solid #6E5A2C;background:#120E06;"></div>
+<div class="abs" style="left:672px;top:826px;width:192px;text-align:center;">
+  <div class="semi" style="font-size:11.5px;letter-spacing:3.2px;color:#F2EDE0;">ADJUST</div>
+  <div style="font-size:8.5px;color:#8A7F6B;margin-top:4px;letter-spacing:0.3px;">modified action authorized</div>
+</div>
+
+<div class="abs" style="left:864px;top:816px;width:192px;height:52px;border:1px solid #6E5A2C;background:#120E06;"></div>
+<div class="abs" style="left:864px;top:826px;width:192px;text-align:center;">
+  <div class="semi" style="font-size:11.5px;letter-spacing:3.2px;color:#F2EDE0;">GATE</div>
+  <div style="font-size:8.5px;color:#8A7F6B;margin-top:4px;letter-spacing:0.3px;">required authority condition pending</div>
+</div>
+
+<div class="abs" style="left:1056px;top:816px;width:192px;height:52px;border:1px solid #6E5A2C;background:#120E06;"></div>
+<div class="abs" style="left:1056px;top:826px;width:192px;text-align:center;">
+  <div class="semi" style="font-size:11.5px;letter-spacing:3.2px;color:#F2EDE0;">SUSPEND</div>
+  <div style="font-size:8.5px;color:#8A7F6B;margin-top:4px;letter-spacing:0.3px;">non-executing pending resolution</div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<div class="abs mono" style="left:0;top:928px;width:1536px;text-align:center;font-size:10px;letter-spacing:3.2px;color:#D9B859;">
+  ADS-&#937;&#8482; &nbsp;&#183;&nbsp; AUTONOMOUS DECISION SECURITY &nbsp;&#183;&nbsp; PUBLIC RELEASE 1.0
+</div>
+<div class="abs mono" style="left:0;top:950px;width:1536px;text-align:center;font-size:9px;letter-spacing:2.8px;color:#8A7F6B;">
+  &#169; 2026 CYBER UNVEIL INTERNATIONAL, LLC &nbsp;&#183;&nbsp; PROPRIETARY FRAMEWORK
+</div>
+
+<img class="abs" src="cu_shield.png" style="left:56px;top:916px;width:43px;height:52px;">
+<div class="abs mono" style="left:56px;top:978px;font-size:8px;letter-spacing:2.2px;color:#5C4A22;">PROPRIETARY &#183; ALL RIGHTS RESERVED</div>
+<div class="abs mono" style="left:1250px;top:940px;width:230px;text-align:right;font-size:8.5px;letter-spacing:2.2px;color:#6E5A2C;">EVIDENCE OVER ASSERTION</div>
